@@ -27,7 +27,7 @@ The project workflow followed these steps:
    - Used SQL queries in MS SQL Server to extract key performance indicators (KPIs) and other relevant data.
    - All SQL queries used in this project are available in the following files:
      - [SQL Queries MD file](SQL_queries.md)
-     - [SQL Queries Document (Word)](P1_Bank_Loan_Data_Analysis/SQL_work/SQL_Query_Doc.docx)
+     - [SQL Queries Document (Word)](SQL_work/SQL_Query_Doc.docx)
      - [SQL Queries Script (SQL File)](P1_Bank_Loan_Data_Analysis/SQL_work/SQL_Queries.sql)
    
 3. **Power BI Dashboard Creation**:
