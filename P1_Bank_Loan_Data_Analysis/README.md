@@ -6,7 +6,7 @@ The objective of this project is to analyze bank loan data, extract key insights
 ## 2. Dataset
 The dataset used for this analysis is detailed in the following document:
 
-[Dataset Details](/Dataset/Dataset_details.md)
+[Dataset Details](Dataset/Dataset_details.md)
 
 This dataset contains information about various loan applications, including personal details, loan amount, payment history, loan status, and more.
 
