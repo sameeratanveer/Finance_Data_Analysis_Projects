@@ -28,20 +28,20 @@ The project workflow followed these steps:
    - All SQL queries used in this project are available in the following files:
      - [SQL Queries MD file](SQL_queries.md)
      - [SQL Queries Document (Word)](SQL_work/SQL_Query_Doc.docx)
-     - [SQL Queries Script (SQL File)](P1_Bank_Loan_Data_Analysis/SQL_work/SQL_Queries.sql)
+     - [SQL Queries Script (SQL File)](SQL_work/SQL_Queries.sql)
    
 3. **Power BI Dashboard Creation**:
    - Cleaned and transformed the data by connecting to the MS SQL Server.
    - Created a 3-page navigated Power BI dashboard to visualize and present the KPIs.
    - The 3-page dashboard includes:
-     - ![Alt Text](P1_Bank_Loan_Data_Analysis/SS/Summary_Dashbaord.png)
-     - ![Alt Text](P1_Bank_Loan_Data_Analysis/SS/Overview_Dashbaord.png)
-     - ![Alt Text](P1_Bank_Loan_Data_Analysis/SS/Details_Dashbaord.png)
+     - ![Alt Text](SS/Summary_Dashbaord.png)
+     - ![Alt Text](SS/Overview_Dashbaord.png)
+     - ![Alt Text](SS/Details_Dashbaord.png)
 
 4. **Dashboard Interactivity Recording**:
    - Recorded the interactive features of the Power BI dashboard.
    - The recorded demo video can be found here: 
-     - [Dashboard Interactivity Recording](P1_Bank_Loan_Data_Analysis/SS/Dashboard_Recording_compressed.mp4)
+     - [Dashboard Interactivity Recording](SS/Dashboard_Recording_compressed.mp4)
 
 ## 5. Key Insights:
 ### Key Performance Indicators (KPIs) Summary: ✅ Overall Loan Performance
