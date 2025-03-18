@@ -13,7 +13,7 @@ This dataset contains information about various loan applications, including per
 ## 3. Problem Statement
 The problem statement for this project, including the requirements and business logic, can be found in this document:
 
-[Problem Statement & Other Details](P1_Bank_Loan_Data_Analysis/Problem_Statement_&_other_details.md)
+[Problem Statement & Other Details](Problem_Statement_&_other_details.md)
 
 This document outlines the main objectives of the analysis and the specific key performance indicators (KPIs) to track.
 
@@ -26,7 +26,7 @@ The project workflow followed these steps:
 2. **Data Querying Using MS SQL Server**:
    - Used SQL queries in MS SQL Server to extract key performance indicators (KPIs) and other relevant data.
    - All SQL queries used in this project are available in the following files:
-     - [SQL Queries MD file](P1_Bank_Loan_Data_Analysis/SQL_queries.md)
+     - [SQL Queries MD file](SQL_queries.md)
      - [SQL Queries Document (Word)](P1_Bank_Loan_Data_Analysis/SQL_work/SQL_Query_Doc.docx)
      - [SQL Queries Script (SQL File)](P1_Bank_Loan_Data_Analysis/SQL_work/SQL_Queries.sql)
    
