@@ -12,7 +12,7 @@ SELECT COUNT(id) AS 'Total_Loan_applications'
 
 FROM dbo.bank_loan_data;
 
-![Alt Text](P1_Bank_Loan_Data_Analysis/queries_ss_folder/Total_Loan_applications.png)
+![Alt Text](./queries_ss_folder/Total_Loan_applications.png)
 
 2. **MTD Loan Applications:**
 
@@ -28,7 +28,7 @@ AND
 
 YEAR(issue_date) = (SELECT YEAR(MAX(issue_date)) FROM dbo.bank_loan_data);
 
-![MTD_loan_applications](P1_Bank_Loan_Data_Analysis/queries_ss_folder/MTD_loan_applications.png)
+![MTD_loan_applications](./queries_ss_folder/MTD_loan_applications.png)
 
 3. PMTD Loan Applications:
 
@@ -42,7 +42,7 @@ AND
 
 YEAR(issue_date) = (SELECT YEAR(MAX(issue_date)) FROM dbo.bank_loan_data);
 
-![PMTD_Loan_applications](P1_Bank_Loan_Data_Analysis/queries_ss_folder/PMTD_Loan_applications.png)
+![PMTD_Loan_applications](./queries_ss_folder/PMTD_Loan_applications.png)
 
 
 KPI2
@@ -53,7 +53,7 @@ SELECT SUM(loan_amount) as Total_Funded_Amount
 
 FROM dbo.bank_loan_data;
 
-![Total_funded_amount](P1_Bank_Loan_Data_Analysis/queries_ss_folder/Total_funded_amount.png)
+![Total_funded_amount](./queries_ss_folder/Total_funded_amount.png)
 
 2. **MTD Funded Amount:**
 
@@ -67,7 +67,7 @@ AND
 
 YEAR(issue_date) = (SELECT YEAR(MAX(issue_date)) FROM bank_loan_data);
 
-![MTD_funded_amount](P1_Bank_Loan_Data_Analysis/queries_ss_folder/MTD_funded_amount.png)
+![MTD_funded_amount](./queries_ss_folder/MTD_funded_amount.png)
 
 3. **PMTD Funded Amount:**
 
@@ -81,7 +81,7 @@ AND
 
 YEAR(issue_date) = (SELECT YEAR(MAX(issue_date)) FROM bank_loan_data);
 
-![PMTD_funded_amount](P1_Bank_Loan_Data_Analysis/queries_ss_folder/PMTD_funded_amount.png)
+![PMTD_funded_amount](./queries_ss_folder/PMTD_funded_amount.png)
 
 KPI3
 
@@ -91,7 +91,7 @@ SELECT SUM(total_payment) as Total_Amount_Received
 
 FROM dbo.bank_loan_data;
 
-![Total_amount_received](P1_Bank_Loan_Data_Analysis/queries_ss_folder/Total_amount_received.png)
+![Total_amount_received](./queries_ss_folder/Total_amount_received.png)
 
 2. **MTD Amount Received..**
 
@@ -105,7 +105,7 @@ AND
 
 YEAR(issue_date) = (SELECT YEAR(MAX(issue_date)) FROM dbo.bank_loan_data);
 
-![MTD_Amount_Received](P1_Bank_Loan_Data_Analysis/queries_ss_folder/MTD_Amount_Received.png)
+![MTD_Amount_Received](./queries_ss_folder/MTD_Amount_Received.png)
 
 3. **PMTD Amount Received…**
 
