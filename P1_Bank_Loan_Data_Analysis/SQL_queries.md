@@ -119,7 +119,7 @@ AND
 
 YEAR(issue_date) = (SELECT YEAR(MAX(issue_date)) FROM dbo.bank_loan_data);
 
-![PMTD_amount_received](P1_Bank_Loan_Data_Analysis/queries_ss_folder/PMTD_amount_received.png)
+![PMTD_amount_received](./queries_ss_folder/PMTD_amount_received.png)
 
 KPI4
 
@@ -129,7 +129,7 @@ SELECT AVG(int_rate)\*100 AS AVG_interest_rate
 
 FROM dbo.bank_loan_data;
 
-![Avg_int_rate](P1_Bank_Loan_Data_Analysis/queries_ss_folder/Avg_int_rate.png)
+![Avg_int_rate](./queries_ss_folder/Avg_int_rate.png)
 
 2. **MTD Avg Interest Rate:**
 
@@ -143,7 +143,7 @@ AND
 
 YEAR(issue_date) = (SELECT YEAR(MAX(issue_date)) FROM dbo.bank_loan_data);
 
-![MTD_avg_int_rate](P1_Bank_Loan_Data_Analysis/queries_ss_folder/MTD_avg_int_rate.png)
+![MTD_avg_int_rate](./queries_ss_folder/MTD_avg_int_rate.png)
 
 
 3. **PMTD Avg Interest Rate:**
@@ -159,7 +159,7 @@ AND
 YEAR(issue_date) = (SELECT YEAR(MAX(issue_date)) FROM dbo.bank_loan_data);
 
 
-![PMTD_avg_int_rate](P1_Bank_Loan_Data_Analysis/queries_ss_folder/PMTD_avg_int_rate.png)
+![PMTD_avg_int_rate](./queries_ss_folder/PMTD_avg_int_rate.png)
 
 KPI5
 
@@ -169,7 +169,7 @@ SELECT AVG(dti)\*100 AS AVG_dti
 
 FROM dbo.bank_loan_data;
 
-![Avg_dti](P1_Bank_Loan_Data_Analysis/queries_ss_folder/Avg_dti.png)
+![Avg_dti](./queries_ss_folder/Avg_dti.png)
 
 2. **MTD DTI:**
 
@@ -179,7 +179,7 @@ FROM dbo.bank_loan_data
 
 WHERE MONTH(issue_date) = 12;
 
-![MTD_avg_dti](P1_Bank_Loan_Data_Analysis/queries_ss_folder/MTD_avg_dti.png)
+![MTD_avg_dti](./queries_ss_folder/MTD_avg_dti.png)
 
 3. **PMTD DTI:**
 
@@ -193,7 +193,7 @@ AND
 
 YEAR(issue_date) = (SELECT YEAR(MAX(issue_date)) FROM dbo.bank_loan_data);
 
-![PMTD_dti](P1_Bank_Loan_Data_Analysis/queries_ss_folder/PMTD_dti.png)
+![PMTD_dti](./queries_ss_folder/PMTD_dti.png)
 
 GOOD LOAN vs BAD LOAN
 
@@ -207,7 +207,7 @@ COUNT(id) AS good_loan_percentage
 
 FROM dbo.bank_loan_data;
 
-![good_loan_percentage](P1_Bank_Loan_Data_Analysis/queries_ss_folder/good_loan_percentage.png)
+![good_loan_percentage](./queries_ss_folder/good_loan_percentage.png)
 
 2. **Good Loan Applications:**
 
@@ -216,7 +216,7 @@ SELECT(
 COUNT( CASE WHEN loan_status = 'Fully Paid' OR loan_status = 'Current' THEN id END)) AS good_loan_applications
 
 FROM dbo.bank_loan_data;
-![good_loan_applications](P1_Bank_Loan_Data_Analysis/queries_ss_folder/good_loan_applications.png)
+![good_loan_applications](./queries_ss_folder/good_loan_applications.png)
 
 3. **Good Loan Funded Amount**:
 
@@ -228,7 +228,7 @@ FROM dbo.bank_loan_data
 
 WHERE loan_status IN ('Fully Paid', 'Current');
 
-![good_loan_funded_amount](P1_Bank_Loan_Data_Analysis/queries_ss_folder/good_loan_funded_amount.png)
+![good_loan_funded_amount](./queries_ss_folder/good_loan_funded_amount.png)
 
 4. **Good Loan Amount Received..**
 
@@ -240,7 +240,7 @@ FROM dbo.bank_loan_data
 
 WHERE loan_status IN ('Fully Paid', 'Current');
 
-![good_loan_amount_received](P1_Bank_Loan_Data_Analysis/queries_ss_folder/good_loan_amount_received.png)
+![good_loan_amount_received](./queries_ss_folder/good_loan_amount_received.png)
 
 5. **Bad Loan Percentage:**
 
@@ -254,7 +254,7 @@ CASE WHEN loan_status='Charged Off' THEN id END
 
 FROM dbo.bank_loan_data;
 
-![bad_loan_percentage](P1_Bank_Loan_Data_Analysis/queries_ss_folder/bad_loan_percentage.png)
+![bad_loan_percentage](./queries_ss_folder/bad_loan_percentage.png)
 
 1. **Bad Loan Applications:**
 
@@ -266,7 +266,7 @@ FROM dbo.bank_loan_data
 
 WHERE loan_status='Charged Off';
 
-![bad_loan_applications](P1_Bank_Loan_Data_Analysis/queries_ss_folder/bad_loan_applications.png)
+![bad_loan_applications](./queries_ss_folder/bad_loan_applications.png)
 
 2. **Bad Loan Funded Amount:**
 
@@ -278,7 +278,7 @@ FROM dbo.bank_loan_data
 
 WHERE loan_status='Charged Off';
 
-![bad_loan_funded_amount](P1_Bank_Loan_Data_Analysis/queries_ss_folder/bad_loan_funded_amount.png)
+![bad_loan_funded_amount](./queries_ss_folder/bad_loan_funded_amount.png)
 
 3. **Bad Loan Amount Received:**
 
@@ -288,7 +288,7 @@ FROM dbo.bank_loan_data
 
 WHERE loan_status='Charged Off';
 
-![bad_loan_amount_received](P1_Bank_Loan_Data_Analysis/queries_ss_folder/bad_loan_amount_received.png)
+![bad_loan_amount_received](./queries_ss_folder/bad_loan_amount_received.png)
 
 Loan Status
 
@@ -308,7 +308,7 @@ FROM dbo.bank_loan_data
 
 GROUP BY loan_status;
 
-![loan_status_1](P1_Bank_Loan_Data_Analysis/queries_ss_folder/loan_status_1.png)
+![loan_status_1](./queries_ss_folder/loan_status_1.png)
 
 2. **Loan status:**
 
@@ -330,7 +330,7 @@ YEAR(issue_date) = (SELECT YEAR(MAX(issue_date)) FROM dbo.bank_loan_data)
 
 GROUP BY loan_status;
 
-![loan_status_2](P1_Bank_Loan_Data_Analysis/queries_ss_folder/loan_status_2.png)
+![loan_status_2](./queries_ss_folder/loan_status_2.png)
 
 1. **BANK LOAN REPORT | OVERVIEW**
 
@@ -356,7 +356,7 @@ DATENAME(mm,issue_date)
 
 ORDER BY MONTH(issue_date);
 
-![month_wise_details](P1_Bank_Loan_Data_Analysis/queries_ss_folder/month_wise_details.png)
+![month_wise_details](./queries_ss_folder/month_wise_details.png)
 
 **STATE:** 
 
@@ -374,8 +374,8 @@ GROUP BY address_state
 
 ORDER BY address_state;
 
-![statewise_details_1](P1_Bank_Loan_Data_Analysis/queries_ss_folder/statewise_details_1.png)
-![state_wise_details_2](P1_Bank_Loan_Data_Analysis/queries_ss_folder/state_wise_details_2.png)
+![statewise_details_1](./queries_ss_folder/statewise_details_1.png)
+![state_wise_details_2](./queries_ss_folder/state_wise_details_2.png)
 
 
 **Term:**
@@ -390,7 +390,7 @@ FROM dbo.bank_loan_data
 
 GROUP BY term;
 
-![term_length_details](P1_Bank_Loan_Data_Analysis/queries_ss_folder/term_length_details.png)
+![term_length_details](./queries_ss_folder/term_wise_details.png)
 
 **EMPLOYEE LENGTH:**
 
@@ -408,7 +408,7 @@ GROUP BY emp_length
 
 ORDER BY emp_length;
 
-![emp_length_details](P1_Bank_Loan_Data_Analysis/queries_ss_folder/emp_length_details.png)
+![emp_length_details](./queries_ss_folder/emp_length_details.png)
 
 
 **PURPOSE:**
@@ -427,7 +427,7 @@ GROUP BY purpose
 
 ORDER BY purpose;
 
-![purpose_wise_details](P1_Bank_Loan_Data_Analysis/queries_ss_folder/purpose_wise_details.png)
+![purpose_wise_details](./queries_ss_folder/purpose_wise_details.png)
 
 
 **Home Ownership:**
@@ -445,4 +445,4 @@ FROM dbo.bank_loan_data
 GROUP BY home_ownership
 
 ORDER BY home_ownership;
-![home_ownership_details](P1_Bank_Loan_Data_Analysis/queries_ss_folder/home_ownership_details.png)
+![home_ownership_details](./queries_ss_folder/home_ownership_details.png)
