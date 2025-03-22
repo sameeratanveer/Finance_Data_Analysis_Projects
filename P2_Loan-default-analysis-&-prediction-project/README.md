@@ -37,7 +37,7 @@ Precision, Recall, and F1 Score: Evaluated to balance model performance.
 Saved the final model as best_rf.joblib and the scaler as scaler.joblib for deployment.
 
 ### 🌐 4. Flask Web Application
-[alt](ss/flask_web.png)
+[alt](../ss/flask_web.png)
 [alt](ss/flask_web_pred2.png)
 Built a Flask Web App where users can enter loan application details and get predictions.
 
