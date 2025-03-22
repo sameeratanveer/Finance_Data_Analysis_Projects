@@ -60,7 +60,7 @@ API returns predictions in JSON format, making it suitable for integration with 
 ### 📊 6. Power BI Dashboard for Insights
 Created a Power BI Dashboard to visualize:
 ![Alt Text](ss/dashbaord_summary.png)
-![Alt Text](ss/dashboard_overview.png)
+![Alt Text](ss/dashbaord_overview.png)
 ![Alt text](ss/dashbaord_demographics.png)
 
 Loan performance metrics (default rates, approval trends).
