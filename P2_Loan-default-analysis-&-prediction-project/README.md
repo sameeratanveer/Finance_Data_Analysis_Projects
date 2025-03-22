@@ -1,9 +1,10 @@
 # Project Overview: Loan Default Prediction System
+<details>
 ## 📢🎯Problem Statement
 Banks and financial institutions face a significant challenge in minimizing loan defaults while ensuring responsible lending practices. Loan defaults occur when borrowers fail to repay their loans, causing financial losses and impacting the stability of the institution.
 
 Identifying potential defaulters beforehand enables financial institutions to take precautionary measures and reduce risk. The challenge is to develop a reliable and efficient system to predict loan defaults based on applicant information such as income, credit score, employment type, and other key features.
-
+</details>
 
 ## Project Workflow
 The workflow of this project consists of the following key stages:
