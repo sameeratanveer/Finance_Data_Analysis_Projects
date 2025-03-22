@@ -35,6 +35,8 @@ Accuracy: 88.6%
 Precision, Recall, and F1 Score: Evaluated to balance model performance.
 
 Saved the final model as best_rf.joblib and the scaler as scaler.joblib for deployment.
+You can download the trained model & scaler file from the google drive.. 
+https://drive.google.com/drive/folders/1bCGcFLm0Xgf3czPF2WqcrHnsVmaBT8Qm?usp=sharing
 
 ### 🌐 4. Flask Web Application
 ![Alt Text](ss/flask-web.png)
