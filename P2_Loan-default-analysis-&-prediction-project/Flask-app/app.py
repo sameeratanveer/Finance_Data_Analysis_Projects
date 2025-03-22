@@ -5,11 +5,11 @@ import os
 import uuid
 
 # Load trained model and scaler
-model = joblib.load("best_rf.joblib")
-scaler = joblib.load("scaler.joblib")
+model = joblib.load("../notebooks&models/best_rf.joblib")
+scaler = joblib.load("../notebooks&models/scaler.joblib")
 
 # Define CSV file to store loan data
-DATA_FILE = "C:/Users/SAMSUNG/Music/Goldsman_Sachs_Projects/P3.1_Credit_Risk/data/predicted.csv"
+DATA_FILE = "../data/predicted.csv"
 
 # Define categorical mappings
 education_map = {"Bachelor's": 0, "High School": 1, "Master's": 2}
