@@ -37,6 +37,8 @@ Precision, Recall, and F1 Score: Evaluated to balance model performance.
 Saved the final model as best_rf.joblib and the scaler as scaler.joblib for deployment.
 
 ### 🌐 4. Flask Web Application
+[alt](ss/flask_web.png)
+[alt](ss/flask_web_pred2.png)
 Built a Flask Web App where users can enter loan application details and get predictions.
 
 Integrated a feature to save predictions into predicted.csv with a unique LoanID generated for each record.
@@ -46,7 +48,8 @@ Flask app includes:
 / → Home route for form submission and displaying prediction.
 
 /predict → API endpoint for receiving data and returning predictions.
-### 5. API Development
+### 5. API Development:
+[ALt text](ss/postman-api.png)
 Developed an API using Flask to enable real-time predictions with:
 
 Form Input: Accepting data via HTML form submission.
@@ -56,6 +59,9 @@ Direct API Requests: Accepting JSON data to the API endpoint.
 API returns predictions in JSON format, making it suitable for integration with other platforms.
 ### 📊 6. Power BI Dashboard for Insights
 Created a Power BI Dashboard to visualize:
+[Alt Text](ss/dashbaord_summary.png)
+[Alt Text](ss/dashboard_overview.png)
+[Alt text](ss/dashbaord_demographics.png)
 
 Loan performance metrics (default rates, approval trends).
 
@@ -94,8 +100,10 @@ Added a detailed README with project insights, instructions, and usage guideline
 | `Default`             | Target variable indicating loan status (1 = Default, 0 = No Default)            |
 
 ## 🔎 Exploratory Data Analysis (EDA) Insights
+[](ss/Top10Features.png)
 
 ###  Insight 1: Credit Score and Default Probability
+[](ss/CreditScore.png)
 - Defaulters (1) have a lower median credit score compared to non-defaulters (0).
 - IQR for defaulters is lower (~400–600), while non-defaulters show higher median scores (~600).
 - Conclusion: Lower credit scores significantly increase the likelihood of default.
@@ -103,22 +111,27 @@ Added a detailed README with project insights, instructions, and usage guideline
 ---
 
 ###  Insight 2: Loan Amount and Default Correlation
+[](ss/LoanAmount.png)
 - Higher loan amounts are directly linked to increased chances of default.
 ---
 
 ###  Insight 3: Employment Status and Default Risk
+[](ss/EmployementType.png)
 - Unemployed applicants have the highest default probability.
 ---
 
 ###  Insight 4: Income Level Impact
+[](ss/Income.png)
 - Low-income borrowers are more prone to default.
 ---
 
 ###  Insight 5: DTI Ratio and Default
+[](ss/DTIRatio.png)
 - Defaulters show significantly higher DTI ratios, confirming its relevance.
 ---
 
 ###  Insight 6: Risk Score as a Key Feature
+[](ss/RiskScore.png)
 - Higher Risk Scores (calculated as `CreditScore / DTIRatio`) correlate with more defaults.
 - A visible rightward shift in the risk curve for defaulters highlights this pattern.
 
