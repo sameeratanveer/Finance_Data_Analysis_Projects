@@ -5,8 +5,8 @@ import os
 import uuid
 
 # Load trained model and scaler
-model = joblib.load("best_rf.joblib")
-scaler = joblib.load("scaler.joblib")
+model = joblib.load("../notebooks&models/best_rf.joblib")
+scaler = joblib.load("../notebooks&models/scaler.joblib")
 
 # Define CSV file to store loan data
 DATA_FILE = "C:/Users/SAMSUNG/Music/Goldsman_Sachs_Projects/P3.1_Credit_Risk/data/predicted.csv"
@@ -61,7 +61,7 @@ def preprocess_data(df):
 
 app = Flask(__name__)
 
-### ✅ API Endpoint for Prediction
+### API Endpoint for Prediction
 
 @app.route("/predict", methods=["POST"])
 def predict():
